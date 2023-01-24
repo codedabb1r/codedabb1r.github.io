@@ -18,9 +18,9 @@ module.exports = {
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/ken101112`,
+      github: `https://github.com/ken101112`, // `https://github.com/ken101112`,
       linkedIn: ``, // ``,
-      email: ``, // `ken101112@hotmail.com`,
+      email: `ken101112@hotmail.com`, // `ken101112@hotmail.com`,
     },
   },
 
