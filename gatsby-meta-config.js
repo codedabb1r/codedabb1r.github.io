@@ -14,13 +14,13 @@ module.exports = {
     name: `김지훈`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      description: ['사람에 가치를 두는', '능동적으로 일하는', '한계에 도전하는'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: `https://github.com/ken101112`, // `https://github.com/ken101112`,
+      github: `https://github.com/ken101112`,
       linkedIn: ``, // ``,
-      email: `ken101112@hotmail.com`, // `ken101112@hotmail.com`,
+      email: `ken101112@hotmail.com`,
     },
   },
 
