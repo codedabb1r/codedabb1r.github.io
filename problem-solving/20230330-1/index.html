@@ -129,8 +129,9 @@
 <h2 id="알게-된-것" style="position:relative;"><a href="#%EC%95%8C%EA%B2%8C-%EB%90%9C-%EA%B2%83" aria-label="알게 된 것 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>알게 된 것</h2>
 <ol>
 <li>매개변수 i의 값부터 j의 값까지 첫번째 for문을 돌려 i의 초깃값이 들어 있는 변수 num의 값을 증가시켰고, 변수 strNum이란 숫자형 num을 문자형으로 변환한 뒤, 두번째 for 문을 통해 각 요소의 인덱스 값 중 k의 값이 있는지 확인 후 있을 경우 answer를 1씩 증가하여 문제를 해결하였다.</li>
-<li>다른 사람 풀이를 보면서 다양한 풀이 방식들이 많아 정말 많이 배우게 된다. 특히 다른 사람 풀이1번에서 k를 기준으로 split() 메서드를 통해 여집합 구하는 방식이 굉장히 인상적이었다. 👍</li>
+<li>다른 사람 풀이를 보면서 다양한 풀이 방식들이 많아 정말 많이 배우게 된다. 특히 다른 사람 풀이 1에서 k를 기준으로 split() 메서드를 통해 여집합 구하는 방식이 굉장히 인상적이었다. 👍</li>
 </ol>
+<p>위의 코드는 i부터 j까지의 모든 수를 문자열로 합쳐서 만든 문자열에서 k가 등장하는 횟수를 반환하는 함수이다. 먼저, a라는 빈 문자열을 만들고 for 반복문을 사용하여 i부터 j까지의 모든 수를 문자열로 변환한 후, a 문자열에 더해준다. 이러면 a 문자열에는 i부터 j까지의 모든 수가 문자열로 합쳐져서 저장되게 된다. 다음으로, a.split(k)를 호출한다. 이 메소드는 a 문자열을 k를 구분자로 나눈 결과를 배열로 반환한다. 이때, <strong>k가 등장하는 위치마다 문자열이 나뉘어지므로,</strong> 반환된 배열의 길이는 k가 등장한 횟수보다 1 크다. 따라서 a.split(k).length-1을 반환하면 k가 등장한 횟수를 구할 수 있다.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"># 다른 사람 풀이 <span class="token number">1</span>
 <span class="token keyword">function</span> <span class="token function">solution</span><span class="token punctuation">(</span><span class="token parameter">i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">let</span> a <span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">;</span>
